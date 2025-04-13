@@ -2,7 +2,7 @@ export const blogDetails = [
   {
     id: 1,
     title: 'Why is React blazing fast',
-    desc: `Whenever there's a state change, you blink an eye and React re-renders. Its so fast you wouldn't even know something was off. React gained a lot of popularity (for all the right reasons) because it can efficiently handle complex UI updates.`,
+    desc: `Whenever there's a state change, you blink an eye and React re-renders. Its so fast you wouldn't even know something was...`,
     bloglink1:
       'https://medium.com/@samflab/why-is-react-blazing-fast-20417ffc6f79',
     bloglink2: 'https://samflab.hashnode.dev/why-is-react-blazing-fast',
@@ -10,7 +10,7 @@ export const blogDetails = [
   {
     id: 2,
     title: 'Hoisting in JavaScript',
-    desc: " One of the hot topics around JavaScript is hoisting. We'll understand what is hoisting. Let's dive deep into this. Hoisting in Javascript is a mechanism...",
+    desc: " One of the hot topics around JavaScript is hoisting. We'll understand what is hoisting. Let's dive deep into this. Hoisting...",
     bloglink1:
       'https://samflab.medium.com/hoisting-in-javascript-var-let-and-const-e3b70c536f55',
     bloglink2:

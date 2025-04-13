@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { makeStyles } from '@mui/styles'
 import { Box, Tab, Tabs, Typography } from '@mui/material'
 import Education from './Education'
 import Experience from './Experience'
@@ -19,8 +18,8 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box p={3}>
-          <Typography>{children}</Typography>
+        <Box sx={{p: 3}}>
+          {children}
         </Box>
       )}
     </div>
@@ -34,73 +33,39 @@ function a11yProps(index) {
   }
 }
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    backgroundColor: '#e1f5fe',
-    display: 'grid',
-    gridTemplateColumns: '15% 85%',
-    height: 224,
-    color: '#000000',
-  },
-  indicator: {
-    '&:focus': {
-      color: '#90acd1',
-      fontWeight: 800,
-    },
-    '&:active': {
-      color: '#90acd1',
-      fontWeight: 800,
-    },
-    '&:hover': {
-      color: '#90acd1',
-      fontWeight: 800,
-    },
-    '&::selected': {
-      color: '#90acd1',
-      fontWeight: 800,
-    },
-    color: '#000000',
-    textTransform: 'capitalize',
-    fontSize: '0.9rem',
-    fontWeight: 800,
-  },
-  tabs: {
-    marginTop: '2rem',
-  },
-}))
-
 function VerticalTabs() {
-  const classes = useStyles()
-  const [value, setValue] = React.useState(0)
+  const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
-    setValue(newValue)
+    setValue(newValue);
   }
 
   return (
-    <div className={classes.root}>
+    <Box 
+    sx={{flexGrow: 1, display:'flex', height: 220}}
+   >
       <Tabs
         orientation="vertical"
         variant="scrollable"
         value={value}
         onChange={handleChange}
-        className={classes.tabs}
+        aria-label='resume tabs'
+        sx={{borderRight: 1, borderColor: 'divider'}}
+       
       >
         <Tab
           label="Education"
           {...a11yProps(0)}
-          className={classes.indicator}
         />
         <Tab
           label="Experience"
           {...a11yProps(1)}
-          className={classes.indicator}
         />
-        <Tab label="Skills" {...a11yProps(2)} className={classes.indicator} />
+        <Tab label="Skills" {...a11yProps(2)} 
+         />
         <Tab
           label="Achievements"
           {...a11yProps(3)}
-          className={classes.indicator}
         />
       </Tabs>
       <TabPanel value={value} index={0}>
@@ -115,7 +80,7 @@ function VerticalTabs() {
       <TabPanel value={value} index={3}>
         <Achievements />
       </TabPanel>
-    </div>
+    </Box>
   )
 }
 

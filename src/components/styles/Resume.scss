@@ -16,14 +16,9 @@ body {
 
 .resume-wrapper {
   height: 80vh;
-  padding-right: 15rem;
 
   .resume {
     margin-left: 4rem;
-
-    // .vertical-tab{
-    //     width: 50rem;
-    // }
   }
 
   .MuiButtonBase-root.Mui-selected {
@@ -55,11 +50,15 @@ body {
 }
 #education,
 #experience,
-#achievement {
+#achievement,#skill {
   padding: 0 5rem;
   width: 100%;
   overflow-y: auto;
   height: 50vh;
+}
+
+#vertical-tabpanel-0, #vertical-tabpanel-1, #vertical-tabpanel-2, #vertical-tabpanel-3{
+  width: 78vw;
 }
 @media screen and (max-width: 960px) {
   #education,
@@ -202,10 +201,40 @@ body {
     margin: 0% 25%;
   }
   #education {
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
 
   #achievement {
     background-color: #e1f5fe;
   }
+}
+
+@media screen and (max-width: 375px) {
+  .resume-wrapper{
+    .resume{
+      margin-left: 0rem;
+      padding: 0;
+
+    }
+  }
+
+  .responsive-resume{
+    padding: 1rem 0;
+    width: 100%;
+  }
+
+  .resume-container{
+    width: 78%;
+    padding: 1rem;
+    .year{
+      margin: 1rem 0;
+    }
+    .course{
+      margin-bottom: 1rem;
+    }
+    p{
+      margin: 0;
+    }
+  }
+  
 }

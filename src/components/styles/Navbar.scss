@@ -26,9 +26,8 @@
 
   .nav-menu {
     display: flex;
-
+    height: 3rem;
     text-align: center;
-    // width: 80vw;
     justify-content: end;
     list-style: none;
     padding-top: 0.5rem;
@@ -94,6 +93,7 @@
       top: 50px;
       left: 0;
       padding: 0;
+      height: 100vh;
     }
   }
 
