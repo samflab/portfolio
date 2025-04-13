@@ -1,0 +1,211 @@
+@import './common.css';
+body {
+  background-color: #e1f5fe;
+  height: auto;
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #e1f5fe;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #90acd1;
+    border-radius: 20px;
+  }
+}
+
+.resume-wrapper {
+  height: 80vh;
+  padding-right: 15rem;
+
+  .resume {
+    margin-left: 4rem;
+
+    // .vertical-tab{
+    //     width: 50rem;
+    // }
+  }
+
+  .MuiButtonBase-root.Mui-selected {
+    color: var(--sub-heading);
+  }
+
+  .resume-header {
+    color: var(--main-font);
+    font-weight: 700;
+    font-size: 2.8rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 2rem;
+    border-bottom: 5px solid #e45447;
+    width: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.resume-sub-heading {
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+}
+.tabs {
+  margin-top: 5rem;
+}
+#education,
+#experience,
+#achievement {
+  padding: 0 5rem;
+  width: 100%;
+  overflow-y: auto;
+  height: 50vh;
+}
+@media screen and (max-width: 960px) {
+  #education,
+  #experience,
+  #achievement {
+    overflow-y: none;
+    height: auto;
+  }
+}
+
+#skills {
+  padding-left: 5rem;
+  height: auto;
+}
+.resume-container {
+  width: 99%;
+  margin-bottom: 2rem;
+  background-color: #f9f9ff;
+  padding: 2rem 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px #90acd1;
+}
+
+.year {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #222222;
+  font-family: 'Poppins', sans-serif;
+}
+
+.course {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222222;
+  font-family: 'Poppins', sans-serif;
+}
+
+.college {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #777777;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.625em;
+}
+
+.desc {
+  font-family: 'Roboto', sans-serif;
+  color: #777777;
+  font-size: 0.98rem;
+  font-weight: 400;
+  line-height: 1.625em;
+}
+
+.skills-plate {
+  display: flex;
+  background-color: #f9f9ff;
+  padding: 1rem;
+  border-radius: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+
+.skill-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icons {
+  margin-right: 0.5rem;
+}
+
+.skills-plate:hover {
+  background-color: #90acd1;
+  color: #fff;
+  .icons {
+    transition: all 0.2s ease-in-out;
+  }
+  .skill-name {
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.resume-container:hover {
+  background-color: #90acd1;
+  .year,
+  .course {
+    color: #f9f9ff;
+    transition: all 0.2s ease-in;
+  }
+  .desc,
+  .college {
+    color: #f9f9ff;
+    transition: all 0.3s ease-in;
+  }
+}
+
+::selection {
+  background-color: #e45447;
+  color: #fff;
+}
+
+@media screen and (max-width: 960px) {
+  .resume {
+    margin: 0 0;
+  }
+  .resume-wrapper {
+    height: auto;
+  }
+  #education,
+  #experience,
+  #achievement {
+    padding: 0% 6% 0% 6%;
+  }
+
+  #skills {
+    padding: 0% 12% 0% 7%;
+  }
+
+  .skills-card {
+    justify-content: space-between;
+  }
+
+  .skills-plate {
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 110px;
+    display: inline-flex;
+  }
+  .resume-divider {
+    margin: 0% 25%;
+  }
+  #education {
+    padding-top: 2rem;
+  }
+
+  #achievement {
+    background-color: #e1f5fe;
+  }
+}

@@ -1,0 +1,16 @@
+:root {
+  --font: #222222;
+  --hover: #e45447;
+  --background: #ecf4fc;
+  --light-heading: #3a3939;
+  --min-height: 80vh;
+  --top-gap: 3.25vw;
+  --right-gap: 6.51vw;
+  --left-gap: 6.51vw;
+  --fontsize: 2.8rem;
+  --sub-heading: #90acd1;
+  --main-font: #222222;
+  --special-font: #e45447;
+  --background: #e1f5fe;
+  --light-heading: #777777;
+}

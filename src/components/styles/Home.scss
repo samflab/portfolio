@@ -1,0 +1,222 @@
+@import '../styles/common.css';
+
+.home {
+  background-color: var(--background);
+
+  .home-content-container {
+    display: flex;
+    height: auto;
+  }
+
+  .header-wrapper {
+    h2 {
+      color: var(--special-font);
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 42px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-top: var(--top-gap);
+    padding-left: 7rem;
+
+    .greeting {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--sub-heading);
+      letter-spacing: 4px;
+    }
+
+    .heading {
+      font-size: var(--fontsize);
+      font-weight: bolder;
+      font-family: 'Poppins', sans-serif;
+      color: var(--main-font);
+      display: block;
+    }
+
+    .sub-heading {
+      display: block;
+
+      color: var(--main-font);
+      opacity: 0.8;
+      font-weight: 200;
+      font-size: 18px;
+    }
+
+    .download-resume {
+      color: #fff;
+      border-radius: 20px;
+      cursor: pointer;
+      border-radius: 30px;
+      margin: 0;
+      font-family: inherit;
+      border: none;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #90acd1 50%, #e45447 50%);
+      background-size: 200% 100%;
+      background-position: right bottom;
+      transition: all 0.5s ease-out;
+      text-decoration: none;
+      margin-top: 1rem;
+      text-align: center;
+      height: 2rem;
+      width: 12rem;
+      padding: 0 1rem;
+      padding-top: 0.5rem;
+
+      &:hover {
+        color: #fff;
+        background-color: #90acd1;
+        background-position: left bottom;
+      }
+    }
+  }
+
+  .img-container {
+    display: grid;
+    height: auto;
+    // padding-bottom: 10vh;
+
+    .hero-img {
+      justify-content: center;
+      text-align: center;
+      height: auto;
+      //   width: 48rem;
+
+      img {
+        object-fit: contain;
+      }
+    }
+    .responsive {
+      width: 40rem;
+      height: auto;
+    }
+
+    .hero-shape {
+      position: absolute;
+      top: 13%;
+      left: 51%;
+    }
+
+    .custom-animation {
+      backface-visibility: hidden;
+      animation: jumping 9s ease-in-out 2s infinite alternate;
+      animation-duration: 9s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-fill-mode: none;
+      animation-play-state: running;
+      animation-name: jumping;
+      animation-delay: 1s;
+      transition: all 7s ease 2s;
+      user-select: none;
+    }
+
+    img[alt='circle-animation'] {
+      opacity: 0.5;
+    }
+  }
+}
+
+/* when on desktop or larger screens */
+// @media screen and (min-width: 960px) {
+//   .home-content-container {
+//     display: flex;
+//     height: auto;
+//   }
+// }
+
+// @media screen and (max-width: 960px) {
+//   .header {
+//     padding-left: 3rem;
+//     margin-bottom: 3rem;
+//   }
+// }
+
+.contact-me {
+  background: var(--sub-heading);
+  text-transform: capitalize;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 0;
+  padding: 30px 44px;
+  border-radius: 60px;
+  transition: color 0.4s linear;
+  position: relative;
+  z-index: 1;
+  border: 0;
+  overflow: hidden;
+}
+
+@keyframes jumping {
+  0% {
+    transform: translateY(10px) translateX(0) rotate(0) scale(1);
+    opacity: 0.9;
+  }
+  20% {
+    transform: translateY(20px) translateX(10px) rotate(-20deg) scale(0.8);
+    opacity: 0.8;
+  }
+  40% {
+    transform: translateY(15px) translateX(-15px) rotate(10deg) scale(0.75);
+    opacity: 0.8;
+  }
+  40% {
+    transform: translateY(-15px) translateX(-25px) rotate(10deg) scale(0.5);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-30px) translateX(20px) rotate(-20deg) scale(0.75);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(15px) translateX(15px) rotate(0) scale(0.95);
+    opacity: 0.7;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .home-content-container {
+    flex-direction: column;
+    padding: 0 2rem;
+    padding-top: 1rem;
+
+    .header-wrapper {
+      padding: 0;
+      .greeting {
+        font-size: 0.8rem;
+      }
+      .heading {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      .sub-heading {
+        font-size: 0.8rem;
+      }
+    }
+
+    .hero-img {
+      width: 0;
+      padding-block: 1rem;
+
+      .responsive {
+        width: 16rem;
+        height: auto;
+        object-fit: contain;
+        margin-top: 1rem;
+      }
+    }
+  }
+}

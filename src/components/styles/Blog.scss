@@ -1,0 +1,134 @@
+.Blog {
+  padding-top: 3vh;
+  padding-bottom: 10vh;
+  background-color: #e1f5fe;
+}
+
+.blog-divider {
+ width: 10rem;
+  border-top: 5px solid #e45447;
+}
+.blog-header {
+  color: var(--main-font);
+  font-weight: bolder;
+  position: relative;
+  text-align: left;
+  font-size: 2.8rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.blog-plate {
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 2rem;
+  display: flex;
+  padding: 0 7rem;
+  margin-top: 1rem;
+}
+.blog-layout {
+  display: flex;
+  flex-direction: column;
+  width: 23rem;
+  height: 14rem;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f9f9ff;
+  color: #222222;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px #90acd1;
+  .urls {
+    background-color: #90acd1;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}
+// small screen
+@media screen and (max-width: 960px) {
+  .blog-layout {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    padding: 5% 5% 5% 5%;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+    margin-bottom: 4.5%;
+  }
+}
+
+.blog-layout:hover {
+  background-color: #90acd1;
+  color: #fff;
+  .urls {
+    margin-right: 0.5rem;
+    background-color: #f9f9ff;
+    border: none;
+    color: #222222;
+    transition: all 0.2s ease-in;
+  }
+  .read-more {
+    color: #f9f9ff;
+  }
+}
+.blog-image {
+  margin: 2%;
+  border-radius: 10px;
+  align-self: center;
+}
+.blog-body {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.blog-title {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins';
+  letter-spacing: 1px;
+}
+
+.blog-desc {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  opacity: 0.9;
+  font-weight: 400;
+  line-height: 1.625rem;
+}
+
+.read-more {
+  color: #90acd1;
+  background-color: transparent;
+  border: none;
+  cursor: default;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 375px) {
+    .blog-header{
+        font-size: 2rem;
+    }
+
+    .blog-divider{
+        width: 6rem;
+    }
+
+    .blog-plate{
+        padding: 1rem 2rem;
+    }
+
+    .blog-layout{
+        height: 25rem;
+    }
+}

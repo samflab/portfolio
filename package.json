@@ -1,0 +1,34 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "homepage": ".",
+  "scripts": {
+    "start": "parcel index.html",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,html}\"",
+    "build": "parcel build index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.0.1",
+    "@mui/styles": "^6.4.9",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^6.30.0",
+    "react-scroll": "^1.9.3",
+    "typeit-react": "^2.7.8"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.14.3",
+    "@parcel/transformer-image": "^2.14.3",
+    "@parcel/transformer-sass": "^2.14.3",
+    "@parcel/transformer-webmanifest": "^2.14.3",
+    "parcel": "^2.14.3",
+    "prettier": "^3.5.3",
+    "svgo": "^3.3.2"
+  }
+}
