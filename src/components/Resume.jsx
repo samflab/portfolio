@@ -93,13 +93,15 @@ const Resume = () => {
 
   useEffect(() => {
     window.addEventListener('resize', handleResize)
-  })
+  }, [])
+
+  console.log("windowWidth", windowWidth)
 
   return (
     <div className="resume-wrapper">
       <div className="resume" id="resume">
         <h1 className="resume-header">Resume</h1>
-        {windowWidth >= 960 ? (
+        {windowWidth >= 1125 ? (
           <div className="vertical-tab">
             <VerticalTabs />
           </div>

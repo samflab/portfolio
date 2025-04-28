@@ -16,13 +16,23 @@ body {
 
 .resume-wrapper {
   height: 80vh;
+  background-color: #f4fafa;
 
+  .css-da8dp0-MuiTabs-root{
+    border-right: none;
+  }
   .resume {
     margin-left: 4rem;
   }
 
+  .MuiButtonBase-root{
+    text-transform: capitalize;
+
+  }
+
   .MuiButtonBase-root.Mui-selected {
     color: var(--sub-heading);
+    color: var(--main-font)
   }
 
   .resume-header {

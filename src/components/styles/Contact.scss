@@ -1,5 +1,7 @@
+@import '../styles/common.css';
+
 .ContactMe {
-    background-color: #f4fafa;
+    background-color: var(--background);
     padding-top: 20px;
   }
   .contact-divider {

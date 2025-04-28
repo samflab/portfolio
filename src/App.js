@@ -18,12 +18,22 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <Home />
-      <Resume />
-      <ProjectWork />
-      <Blog />
-      <Contact/>
-      <Footer/>
+      <section id="home">
+        <Home />
+      </section>
+      <section id="resume">
+        <Resume />
+      </section>
+      <section id="projects">
+        <ProjectWork />
+      </section>
+      <section id="blogs">
+        <Blog />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
+      <Footer />
     </div>
   )
 }

@@ -1,5 +1,7 @@
+@import '../styles/common.css';
+
 .Project {
-  background-color: #f4fafa;
+  background-color: var(--background);
   padding-top: 1rem;
 }
 

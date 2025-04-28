@@ -2,37 +2,31 @@ export const menuItems = [
   {
     id: 1,
     title: 'Home',
-    url: '/home',
+    url: 'home',
   },
 
   {
     id: 2,
-    title: 'About Me',
-    url: '/about',
+    title: 'Resume',
+    url: 'resume',
   },
 
   {
     id: 3,
-    title: 'Resume',
-    url: '/resume',
+    title: 'Projects',
+    url: 'projects',
   },
 
   {
     id: 4,
-    title: 'Projects',
-    url: '/projects',
+    title: 'Blogs',
+    url: 'blogs',
   },
 
   {
     id: 5,
-    title: 'Blogs',
-    url: '/blogs',
-  },
-
-  {
-    id: 6,
     title: 'Contact',
-    url: '/contact',
+    url: 'contact',
   },
 ]
 
