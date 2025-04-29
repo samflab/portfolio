@@ -143,3 +143,32 @@
        
     }
 }
+
+@media screen and (max-width: 425px) {
+  .blog-header{
+      font-size: 2rem;
+  }
+
+  .blog-divider{
+      width: 6rem;
+  }
+
+  .blog-plate{
+      padding: 1rem 2rem;
+  }
+
+  .blog-layout{
+    padding: 1rem;
+      height: 16rem;
+      .blog-desc{
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: break-spaces;
+      }
+     
+  }
+}

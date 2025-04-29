@@ -121,3 +121,18 @@
         padding: 1rem 2rem;
     }
 }
+
+@media screen and (max-width: 425px) {
+  .project-header{
+      font-size: 2.5rem;
+      width: 11rem;
+  }
+
+  .project-container{
+      padding: 1rem 2rem;
+  }
+
+  .card-content {
+    width: 20rem;
+  }
+}

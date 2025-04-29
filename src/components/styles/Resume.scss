@@ -213,10 +213,6 @@ body {
   #education {
     padding-top: 1rem;
   }
-
-  #achievement {
-    background-color: #e1f5fe;
-  }
 }
 
 @media screen and (max-width: 375px) {
@@ -235,6 +231,38 @@ body {
 
   .resume-container{
     width: 78%;
+    padding: 1rem;
+    .year{
+      margin: 1rem 0;
+    }
+    .course{
+      margin-bottom: 1rem;
+    }
+    p{
+      margin: 0;
+    }
+  }
+  
+}
+
+
+@media screen and (max-width: 425px) {
+  .resume-wrapper{
+    .resume{
+      margin-left: 0rem;
+      padding: 0;
+      width: 89%;
+    }
+  }
+
+  .responsive-resume{
+    padding: 1rem 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .resume-container{
+    width: 91%;
     padding: 1rem;
     .year{
       margin: 1rem 0;
