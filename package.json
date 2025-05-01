@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "homepage": ".",
+  "homepage": "https://samflab.github.io/",
   "scripts": {
     "start": "parcel index.html",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,html}\"",
