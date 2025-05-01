@@ -1,6 +1,6 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom' 
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import './components/styles/App.css'
@@ -37,7 +37,7 @@ const App = () => {
 const rootElement = document.getElementById('root')
 const root = createRoot(rootElement)
 root.render(
-  <BrowserRouter>
+  <HashRouter> {/* ✅ Changed from <BrowserRouter> */}
     <App />
-  </BrowserRouter>
+  </HashRouter>
 )
