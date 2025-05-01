@@ -17,11 +17,7 @@ function TabPanel(props) {
       aria-labelledby={`vertical-tab-${index}`}
       {...other}
     >
-      {value === index && (
-        <Box sx={{p: 3}}>
-          {children}
-        </Box>
-      )}
+      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
     </div>
   )
 }
@@ -34,39 +30,26 @@ function a11yProps(index) {
 }
 
 function VerticalTabs() {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(0)
 
   const handleChange = (event, newValue) => {
-    setValue(newValue);
+    setValue(newValue)
   }
 
   return (
-    <Box 
-    sx={{flexGrow: 1, display:'flex', height: 220}}
-   >
+    <Box sx={{ flexGrow: 1, display: 'flex', height: 220 }}>
       <Tabs
         orientation="vertical"
         variant="scrollable"
         value={value}
         onChange={handleChange}
-        aria-label='resume tabs'
-        sx={{borderRight: 1, borderColor: 'divider'}}
-       
+        aria-label="resume tabs"
+        sx={{ borderRight: 1, borderColor: 'divider' }}
       >
-        <Tab
-          label="Education"
-          {...a11yProps(0)}
-        />
-        <Tab
-          label="Experience"
-          {...a11yProps(1)}
-        />
-        <Tab label="Skills" {...a11yProps(2)} 
-         />
-        <Tab
-          label="Achievements"
-          {...a11yProps(3)}
-        />
+        <Tab label="Education" {...a11yProps(0)} />
+        <Tab label="Experience" {...a11yProps(1)} />
+        <Tab label="Skills" {...a11yProps(2)} />
+        <Tab label="Achievements" {...a11yProps(3)} />
       </Tabs>
       <TabPanel value={value} index={0}>
         <Education />
@@ -95,7 +78,7 @@ const Resume = () => {
     window.addEventListener('resize', handleResize)
   }, [])
 
-  console.log("windowWidth", windowWidth)
+  console.log('windowWidth', windowWidth)
 
   return (
     <div className="resume-wrapper">

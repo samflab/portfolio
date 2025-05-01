@@ -111,28 +111,37 @@
   white-space: break-spaces;
 }
 
-@media screen and (max-width: 375px) {
-    .project-header{
-        font-size: 2rem;
-        width: 9rem;
+@media screen and (max-width: 768px) {
+  .project-container {
+    padding: 3rem 0rem;
+    .card-content {
+      width: 17rem;
     }
-
-    .project-container{
-        padding: 1rem 2rem;
-    }
+  }
 }
 
 @media screen and (max-width: 425px) {
-  .project-header{
-      font-size: 2.5rem;
-      width: 11rem;
+  .project-header {
+    font-size: 2.5rem;
+    width: 11rem;
   }
 
-  .project-container{
-      padding: 1rem 2rem;
+  .project-container {
+    padding: 1rem 2rem;
   }
 
   .card-content {
     width: 20rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .project-header {
+    font-size: 2rem;
+    width: 9rem;
+  }
+
+  .project-container {
+    padding: 1rem 2rem;
   }
 }

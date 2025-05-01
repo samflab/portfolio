@@ -1,6 +1,5 @@
 import React from 'react'
 import Card from '../components/cards/ExperienceCard'
-import './styles/Experience.scss'
 
 const Experience = () => {
   return (

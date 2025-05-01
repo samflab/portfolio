@@ -1,11 +1,11 @@
-import React from "react";
-import { FaLinkedinIn, FaMediumM, FaTwitter } from "react-icons/fa";
-import { AiFillGithub, AiOutlineArrowUp } from "react-icons/ai";
-import { Link } from "react-scroll";
-import "./styles/Footer.scss";
+import React from 'react'
+import { FaLinkedinIn, FaMediumM, FaTwitter } from 'react-icons/fa'
+import { AiFillGithub, AiOutlineArrowUp } from 'react-icons/ai'
+import { Link } from 'react-scroll'
+import './styles/Footer.scss'
 
 const Footer = () => {
-    const logo = new URL('../../public/images/m.svg', import.meta.url)
+  const logo = new URL('../../public/images/m.svg', import.meta.url)
   return (
     <div className="Footer" id="footer">
       <img src={logo} alt="logo" height="70" weight="70" />
@@ -27,23 +27,18 @@ const Footer = () => {
           <FaTwitter className="social-logo" />
         </a>
       </div>
-      
+
       <div>
-        Made with ♡ by{" "}
+        Made with ♡ by{' '}
         <a className="my-name" href="https://github.com/samflab/Portfolio">
           Masudha Meher
         </a>
       </div>
-      <Link
-        id="scrollUp"
-        to="top"
-        smooth={true}
-        
-      >
+      <Link id="scrollUp" to="top" smooth={true}>
         <AiOutlineArrowUp />
       </Link>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

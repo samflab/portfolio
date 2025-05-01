@@ -18,21 +18,20 @@ body {
   height: 80vh;
   background-color: #f4fafa;
 
-  .css-da8dp0-MuiTabs-root{
+  .css-da8dp0-MuiTabs-root {
     border-right: none;
   }
   .resume {
     margin-left: 4rem;
   }
 
-  .MuiButtonBase-root{
+  .MuiButtonBase-root {
     text-transform: capitalize;
-
   }
 
   .MuiButtonBase-root.Mui-selected {
     color: var(--sub-heading);
-    color: var(--main-font)
+    color: var(--main-font);
   }
 
   .resume-header {
@@ -60,23 +59,19 @@ body {
 }
 #education,
 #experience,
-#achievement,#skill {
+#achievement,
+#skill {
   padding: 0 5rem;
-  width: 100%;
+  width: auto;
   overflow-y: auto;
   height: 50vh;
 }
 
-#vertical-tabpanel-0, #vertical-tabpanel-1, #vertical-tabpanel-2, #vertical-tabpanel-3{
+#vertical-tabpanel-0,
+#vertical-tabpanel-1,
+#vertical-tabpanel-2,
+#vertical-tabpanel-3 {
   width: 78vw;
-}
-@media screen and (max-width: 960px) {
-  #education,
-  #experience,
-  #achievement {
-    overflow-y: none;
-    height: auto;
-  }
 }
 
 #skills {
@@ -180,6 +175,32 @@ body {
   color: #fff;
 }
 
+@media screen and (max-width: 1440px) {
+  #education,
+  #experience,
+  #achievement,
+  #skill {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .resume-wrapper {
+    height: auto;
+    .resume {
+      margin-left: 3rem;
+    }
+  }
+
+  #education,
+  #experience,
+  #achievement,
+  #skill {
+    height: auto;
+    padding: 0px 0.5rem;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .resume {
     margin: 0 0;
@@ -190,6 +211,8 @@ body {
   #education,
   #experience,
   #achievement {
+    overflow-y: none;
+    height: auto;
     padding: 0% 6% 0% 6%;
   }
 
@@ -215,64 +238,88 @@ body {
   }
 }
 
-@media screen and (max-width: 375px) {
-  .resume-wrapper{
-    .resume{
-      margin-left: 0rem;
-      padding: 0;
-
-    }
+@media screen and (max-width: 1024px) {
+  .resume-container {
+    width: 89%;
   }
-
-  .responsive-resume{
-    padding: 1rem 0;
-    width: 100%;
-  }
-
-  .resume-container{
-    width: 78%;
-    padding: 1rem;
-    .year{
-      margin: 1rem 0;
-    }
-    .course{
-      margin-bottom: 1rem;
-    }
-    p{
-      margin: 0;
-    }
-  }
-  
 }
 
+@media screen and (max-width: 768px) {
+  .resume-wrapper .resume {
+    margin-left: 0rem;
+  }
+
+  .resume-container {
+    width: auto;
+  }
+}
 
 @media screen and (max-width: 425px) {
-  .resume-wrapper{
-    .resume{
+  .resume-wrapper {
+    .resume {
       margin-left: 0rem;
       padding: 0;
       width: 89%;
     }
   }
 
-  .responsive-resume{
+  .responsive-resume {
     padding: 1rem 0;
     width: 100%;
     height: auto;
   }
 
-  .resume-container{
-    width: 91%;
-    padding: 1rem;
-    .year{
+  .resume-container {
+    width: 81%;
+    // margin-left: 1rem;
+    .year {
       margin: 1rem 0;
     }
-    .course{
+    .course {
       margin-bottom: 1rem;
     }
-    p{
+    p {
       margin: 0;
     }
   }
-  
+}
+
+@media screen and (max-width: 375px) {
+  .resume-wrapper {
+    .resume {
+      margin-left: 0rem;
+      padding: 0;
+    }
+
+    .resume-header {
+      font-size: 2rem;
+      width: 9rem;
+    }
+  }
+
+  .responsive-resume {
+    padding: 1rem 0;
+    width: 100%;
+  }
+
+  .resume-container {
+    width: 90%;
+    padding: 1rem;
+    .year {
+      margin: 1rem 0;
+    }
+    .course {
+      margin-bottom: 1rem;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .resume-container {
+    margin-left: 0.5rem;
+    width: 90%;
+  }
 }
