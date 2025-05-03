@@ -46,16 +46,16 @@ function VerticalTabs() {
         aria-label="resume tabs"
         sx={{ borderRight: 1, borderColor: 'divider' }}
       >
-        <Tab label="Education" {...a11yProps(0)} />
-        <Tab label="Experience" {...a11yProps(1)} />
+        <Tab label="Experience" {...a11yProps(0)} />
+        <Tab label="Education" {...a11yProps(1)} />
         <Tab label="Skills" {...a11yProps(2)} />
         <Tab label="Achievements" {...a11yProps(3)} />
       </Tabs>
       <TabPanel value={value} index={0}>
-        <Education />
+        <Experience />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Experience />
+        <Education />
       </TabPanel>
       <TabPanel value={value} index={2}>
         <Skills />
@@ -78,8 +78,6 @@ const Resume = () => {
     window.addEventListener('resize', handleResize)
   }, [])
 
-  console.log('windowWidth', windowWidth)
-
   return (
     <div className="resume-wrapper">
       <div className="resume" id="resume">
@@ -90,8 +88,9 @@ const Resume = () => {
           </div>
         ) : (
           <div className="responsive-resume">
-            <Education />
             <Experience />
+            <Education />
+
             <Skills />
             <Achievements />
           </div>

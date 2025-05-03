@@ -19,14 +19,6 @@ const Home = () => {
             <IntroScroll />
           </h2>
           <h4 className="sub-heading">{myIntro}</h4>
-          <a
-            href="Masudha Meher Resume.pdf"
-            type="submit"
-            className="download-resume"
-            download
-          >
-            Download My Resume
-          </a>
         </div>
         <div className="img-container">
           <div className="hero-shape custom-animation">

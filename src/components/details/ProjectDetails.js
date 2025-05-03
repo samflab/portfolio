@@ -1,23 +1,27 @@
 export const ProjectDetails = [
   {
-    image:
-      'https://raw.githubusercontent.com/samflab/samflab.github.io/refs/heads/gh-pages/images/azure.png',
+    image: new URL('../../assets/richtexteditor.png', import.meta.url),
+    title: 'RichText Editor',
+    body: 'Developed a custom rich text editor supporting text formatting, nested lists, and custom blocks like quotes and code. Implemented inline components for interactive content editing with draggable elements and non-disruptive property updates. Added advanced keyboard shortcuts, including combination keys and command sequences, with seamless navigation. Built a robust clipboard system preserving formatting, enabling content-type conversion and custom paste behaviors. Engineered a custom undo/redo system that groups actions, preserves selection, and handles complex transformations. Integrated an advanced @mention system with fuzzy search across data sources and preview cards for mentioned entities, enhancing content interactivity and editing experience.',
+    demourl: 'https://richtexteditor-by-masudha.netlify.app/',
+    codeurl: 'https://github.com/samflab/richtexteditor',
+  },
+  {
+    image: new URL('../../assets/azure.png', import.meta.url),
     title: 'Azure UI',
     body: 'A CSS based component library which makes development really easy. Focus more on the functionality and less on the UI. Azure UI is customizable, fast and user friendly.',
     demourl: 'https://azure-ui.netlify.app/',
     codeurl: 'https://github.com/samflab/azure-ui',
   },
   {
-    image:
-      'https://raw.githubusercontent.com/samflab/samflab.github.io/refs/heads/gh-pages/images/manga.png',
+    image: new URL('../../assets/manga.png', import.meta.url),
     title: 'MangaNotComics',
     body: 'MangaNotComics is a online manga store for otakus. Features: explore, wishlist, cart, authentication. This is an ongoing project at the moment.',
     demourl: 'https://react-manganotcomics.netlify.app',
     codeurl: 'https://github.com/samflab/mnc-react',
   },
   {
-    image:
-      'https://raw.githubusercontent.com/samflab/samflab.github.io/refs/heads/gh-pages/images/anime.png',
+    image: new URL('../../assets/anime.jpg', import.meta.url),
     title: 'Animotion',
     body: "A video library web app for anime lovers. In short, this one's a youtube for otakus. We'll get a lot of anime related videos be it music videos, anime art tutorials, AMVs, OSTs, and the list continues.",
     demourl: 'https://animotion.netlify.app/',
@@ -25,64 +29,56 @@ export const ProjectDetails = [
   },
 
   {
-    image:
-      'https://raw.githubusercontent.com/samflab/samflab.github.io/refs/heads/gh-pages/images/minions.jpg',
+    image: new URL('../../assets/minions.jpg', import.meta.url),
     title: 'Banana Talk',
     body: 'Are you a minion fan? Ever wanted to talk in their language? Here, I have the banana talk app that converts your English into the banana language. Enjoy ! ',
     demourl: 'https://talkinginbanana.netlify.app/',
     codeurl: 'https://github.com/samflab/banana-speak',
   },
   {
-    image:
-      'https://raw.githubusercontent.com/samflab/samflab.github.io/refs/heads/gh-pages/images/notesflix.jpg',
+    image: new URL('../../assets/notesflix.jpg', import.meta.url),
     title: 'Notesflix',
     body: 'An online radio show that aims to bring people from different professional backgrounds on a single platform to share their career roadmap and also a platform for sharing college notes.',
     demourl: 'https://notesflix.in',
     codeurl: 'https://github.com/samflab/Notesflix',
   },
   {
-    image:
-      'https://raw.githubusercontent.com/samflab/samflab.github.io/refs/heads/gh-pages/images/todo.jpg',
+    image: new URL('../../assets/todo.jpg', import.meta.url),
     title: 'Todo App with React',
     body: 'A todo app that is integrated with a backend. You can use it by signing into your Google account. Minimalistic design which adds the pending work, mark it as read and you can also delete it.',
     demourl: 'https://samflab.github.io/react-todo/',
     codeurl: 'https://github.com/samflab/react-todo',
   },
   {
-    image:
-      'https://raw.githubusercontent.com/samflab/samflab.github.io/refs/heads/gh-pages/images/emoji.jpg',
+    image: new URL('../../assets/emoji.jpg', import.meta.url),
     title: 'Emoji Interpreter',
     body: 'Have you ever had trouble with the meaning of the food based emojis? Have you ever wondered what dish is this? No worries. Food Emoji Interpreter will help you!',
     demourl: 'https://samflab.github.io/food-emoji-interpreter/',
     codeurl: 'https://github.com/samflab/food-emoji-interpreter/tree/master',
   },
   {
-    image:
-      'https://raw.githubusercontent.com/samflab/samflab.github.io/refs/heads/gh-pages/images/weather.jpg',
+    image: new URL('../../assets/weather.jpg', import.meta.url),
     title: 'Weather App',
     body: "A simple Weather App where you enter the city and it will tell how's the weather along with maximum and minimum temperature and humidity. Built with Vanilla JS and weather API.",
     demourl: 'https://whatsthetemp.netlify.app/',
     codeurl: 'https://github.com/samflab/Weather-App',
   },
   {
-    image:
-      'https://raw.githubusercontent.com/samflab/samflab.github.io/refs/heads/gh-pages/images/diary.jpg',
+    image: new URL('../../assets/diary.jpg', import.meta.url),
     title: 'Palindrome Birthday',
     body: 'Palindromes are strings or numbers which are read the same from front and back. Check to see if your birthday is a palindrome. If not, get to know what is the nearest palindromic date.',
     demourl: 'https://pali-bday.netlify.app/',
     codeurl: 'https://github.com/samflab/palindrome-birthday',
   },
   {
-    image:
-      'https://raw.githubusercontent.com/samflab/samflab.github.io/refs/heads/gh-pages/images/lorem_ipsum.jpg',
+    image: new URL('../../assets/lorem_ipsum.jpg', import.meta.url),
     title: 'Not Lorem Ipsum',
     body: "Are you bored of a sample text for your development like Lorem Ipsum? Here's a random lorem ipsum paragraph generator that generates sample paragraphs for your development phase.",
     demourl: 'https://randomoremipsum.netlify.app/',
     codeurl: 'https://github.com/samflab/random-lorem-ipsum',
   },
   {
-    image:
-      'https://raw.githubusercontent.com/samflab/samflab.github.io/refs/heads/gh-pages/images/fitility.jpg',
+    image: new URL('../../assets/fitility.jpg', import.meta.url),
     title: 'Fitility',
     body: 'An android application for dance, fitness workout videos and diet plans along with user authentication, admin role management, CRUD functionalities with Firebase.',
     demourl:
